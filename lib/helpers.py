@@ -108,5 +108,5 @@ def view_all_comics():
         print("No comics found.")
 
 def exit_program():
-    print("Goodbye!")
+    print("Goodbye may the force be with you!")
     exit()

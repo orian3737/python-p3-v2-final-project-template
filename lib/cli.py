@@ -36,6 +36,9 @@ def main():
             print("Invalid choice")
 
 def menu():
+    print("*************************************")
+    print("Welcome to the Comic Book Manager 1.0")
+    print("_____________________________________")
     print("Please select an option:")
     print("0. Exit the program")
     print("1. Add Category")
@@ -46,6 +49,7 @@ def menu():
     print("6. Delete Comic")
     print("7. View All Categories")
     print("8. View All Comics")
+    print("**************************************")
 
 if __name__ == "__main__":
     main()
