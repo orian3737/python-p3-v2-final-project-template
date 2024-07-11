@@ -73,6 +73,7 @@ The Comic Book Manager is a Command-Line Interface (CLI) app that I designed to 
   - Choose option `3`.
   - Enter `Fantasy` when prompted.
   - Output: `Category 'Fantasy' deleted.`
+
 ## Project Structure
 
 - `models/`: Contains the database models.
@@ -80,3 +81,53 @@ The Comic Book Manager is a Command-Line Interface (CLI) app that I designed to 
 - `main.py`: Entry point of the application.
 - `README.md`: Project documentation.
 
+    comic_book_manager/
+    ├── Pipfile
+    ├── Pipfile.lock
+    ├── README.md
+    └── lib
+    ├── models
+    │ ├── init.py
+    │ └── category.py
+    │ └── comic.py
+    ├── cli.py
+    ├── debug.py
+    ├── helpers.py
+    └── populate_db.py
+
+
+## ORM Requirements
+
+
+- The application must include a database created and modified with Python ORM methods that you write.
+    **check**
+- The data model must include at least 2 model classes.
+    **check**
+- The data model must include at least 1 one-to-many relationship.
+    **check**
+- Property methods should be defined to add appropriate constraints to each model class.
+    **check**
+- Each model class should include ORM methods (create, delete, get all, and find by id at minimum).
+    **check**
+
+## CLI Requirements
+
+
+- The CLI must display menus with which a user may interact.
+    **check**
+- The CLI should use loops as needed to keep the user in the application until they choose to exit.
+    **check**
+- For EACH class in the data model, the CLI must include options: to create an object, delete an object, display all objects, view related objects, and find an object by attribute.
+    **check**
+- The CLI should validate user input and object creations/deletions, providing informative errors to the user.
+    **check**
+- The project code should follow OOP best practices.
+    **check**
+- Pipfile contains all needed dependencies and no unneeded dependencies.
+    **check**
+- Imports are used in files only where necessary.
+    **check**
+- Project folders, files, and modules should be organized and follow appropriate naming conventions.
+    **check**
+- The project should include a README.md that describes the application.
+    **check**
