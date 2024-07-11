@@ -37,6 +37,8 @@ The Comic Book Manager is a Command-Line Interface (CLI) app that I designed to 
 
     - **5. View Comics**: Displays all comics in the database along with their categories.
     - **6. Delete Comic**: Prompts you to enter a comic title and deletes it from the database.
+    - **7. View All Categories**: Lists all categories in the database.
+    - **8. View All Comics**: Lists all comics in the database along with their categories.
 
 ## Category examples
 
@@ -73,6 +75,25 @@ The Comic Book Manager is a Command-Line Interface (CLI) app that I designed to 
   - Choose option `3`.
   - Enter `Fantasy` when prompted.
   - Output: `Category 'Fantasy' deleted.`
+
+  - **View All Categories**:
+  - Choose option `7`.
+  - Output:
+    ```
+    Category(id=1, name='Action')
+    Category(id=2, name='Adventure')
+    Category(id=3, name='Comedy')
+    ```
+
+- **View All Comics**:
+  - Choose option `8`.
+  - Output:
+    ```
+    Comic(id=1, title='Batman: Year One', issue_number='1', category='Action')
+    Comic(id=2, title='Spider-Man: Homecoming', issue_number='1', category='Adventure')
+    Comic(id=3, title='Deadpool: Merc with a Mouth', issue_number='1', category='Comedy')
+    ect...
+    ``
 
 ## Project Structure
 
