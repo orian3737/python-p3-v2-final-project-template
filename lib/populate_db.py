@@ -23,7 +23,7 @@ def populate_db():
         {"title": "Sin City: The Hard Goodbye", "issue_number": 1, "category": "Thriller"}
     ]
 
-    
+    2
     for name in categories:
         if Category.find_by_name(name) is None:
             category = Category(name=name)

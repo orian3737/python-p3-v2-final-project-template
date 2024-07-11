@@ -83,6 +83,30 @@ def delete_comic():
     else:
         print("Comic not found.")
 
+def view_all_categories():
+    sql = 'SELECT * FROM categories'
+    CURSOR.execute(sql)
+    categories = CURSOR.fetchall()
+    if categories:
+        for row in categories:
+            print(f"Category(id={row[0]}, name='{row[1]}')")
+    else:
+        print("No categories found.")
+
+def view_all_comics():
+    sql = """
+    SELECT comics.id, comics.title, comics.issue_number, categories.name 
+    FROM comics 
+    JOIN categories ON comics.category_id = categories.id
+    """
+    CURSOR.execute(sql)
+    comics = CURSOR.fetchall()
+    if comics:
+        for row in comics:
+            print(f"Comic(id={row[0]}, title='{row[1]}', issue_number='{row[2]}', category='{row[3]}')")
+    else:
+        print("No comics found.")
+
 def exit_program():
     print("Goodbye!")
     exit()

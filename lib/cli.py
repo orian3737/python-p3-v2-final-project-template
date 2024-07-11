@@ -1,14 +1,14 @@
 from helpers import (
     exit_program,
-    add_category, 
-    search_category,  
+    add_category,
+    search_category,
     delete_category,
     add_comic,
     search_comic,
-    delete_comic 
-    
+    delete_comic,
+    view_all_categories,
+    view_all_comics
 )
-
 
 def main():
     while True:
@@ -28,6 +28,10 @@ def main():
             search_comic()
         elif choice == "6":
             delete_comic()
+        elif choice == "7":
+            view_all_categories()
+        elif choice == "8":
+            view_all_comics()
         else:
             print("Invalid choice")
 
@@ -40,6 +44,8 @@ def menu():
     print("4. Add Comic")
     print("5. Search Comic")
     print("6. Delete Comic")
+    print("7. View All Categories")
+    print("8. View All Comics")
 
 if __name__ == "__main__":
     main()
